@@ -212,7 +212,9 @@ input[type=range]{accent-color:var(--gold);width:88px;cursor:pointer;}
 .form-field:focus-within{border-color:rgba(184,151,90,.2);}
 .form-field.full{grid-column:1/-1;}
 .form-field label{font-size:8px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:10px;}
-.form-field input,.form-field select,.form-field textarea{background:none;border:none;color:var(--text);font-size:14px;font-family:'DM Sans',sans-serif;width:100%;outline:none;cursor:none;}
+.form-field input,.form-field select,.form-field textarea{background:rgba(255,255,255,.05);border:1px solid rgba(184,151,90,.15);border-radius:2px;color:var(--text);font-size:14px;font-family:'DM Sans',sans-serif;width:100%;outline:none;cursor:none;padding:10px 12px;margin-top:4px;}
+.form-field input::placeholder,.form-field textarea::placeholder{color:var(--muted);}
+.form-field input:focus,.form-field select:focus,.form-field textarea:focus{border-color:rgba(184,151,90,.4);background:rgba(255,255,255,.07);}
 .form-field textarea{resize:none;height:80px;line-height:1.7;}
 .form-field select option{background:var(--panel);}
 
